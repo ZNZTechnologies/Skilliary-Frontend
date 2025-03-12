@@ -1,0 +1,59 @@
+.button {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 8px 15px;
+  outline: none;
+  border: none;
+  background-color: var(--primary);
+  color: var(--fg);
+  position: relative;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.button.rounded {
+  border-radius: 50px;
+}
+
+.button.bordered {
+  border: 1px solid var(--primary);
+  background-color: transparent !important;
+  color: var(--primary) !important;
+}
+
+.button.transparent {
+  background-color: transparent !important;
+  color: var(--fg) !important;
+}
+.button.transparent:not(.bordered) {
+  padding: 10px 0px !important;
+}
+
+.button.top {
+  flex-direction: column;
+}
+
+.button.bottom {
+  flex-direction: column-reverse;
+}
+
+.button.left {
+  flex-direction: row;
+}
+
+.button.right {
+  flex-direction: row-reverse;
+}
+
+.button > .icon {
+  width: 18px;
+  color: inherit;
+}
+
+.button > .children {
+  width: 100%;
+  height: 100%;
+  font-size: inherit;
+  color: inherit;
+}
